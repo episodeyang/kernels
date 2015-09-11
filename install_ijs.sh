@@ -28,4 +28,10 @@ cd ..
 sudo rm -rf zeromq-4.0.5.tar.gz
 
 sudo npm install --upgrade npm n -g
+sudo yum install nodejs-legacy npm ipython ipython-notebook libzmq-dev
 sudo npm install -g ijavascript
+sudo npm install -g ijs
+sudo chown ec2-user -R /usr/lib/node_modules/
+
+# now to activate node.js you can just run ijs in the command line
+ijs
